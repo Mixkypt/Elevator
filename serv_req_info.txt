@@ -1,0 +1,35 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x28746867:
+	0x0a6598b0: edt_sme + 0x198b0 (??0SME_COMPILE_GENERATOR@@QAE@XZ + 0xcc60)
+	</callstack>
+	<error>Access Violation at 0X28746867</error>
+	<date>Fri Sep 22 12:27:33 2023</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>Access Violation at 0X28746867
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x28746867:
+	0x00b01d3c: edt_sme + 0x51d3c (??1SME_COMPILE_GENERATOR@@QAE@XZ + 0x778c)
+	0x7610e148: USER32 + 0x2e148 (GetWindowThreadProcessId + 0x2a8)
+	0x761030e5: USER32 + 0x230e5 (MsgWaitForMultipleObjectsEx + 0xbe5)
+	</callstack>
+	<error>Current editor: , GED, GED, RPW, STED, STED, STED</error>
+	<date>Sat Oct 14 14:25:29 2023</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>Access Violation at 0X28746867
+Current editor: , GED, GED, RPW, STED, STED, STED
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+

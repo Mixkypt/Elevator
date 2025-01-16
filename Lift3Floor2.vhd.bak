@@ -1,0 +1,67 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY Lift3Floor2 IS
+    PORT (
+        reset : IN STD_LOGIC := '0';
+        clock : IN STD_LOGIC;
+        SW1 : IN STD_LOGIC := '0';
+        SW2 : IN STD_LOGIC := '0';
+        SW3 : IN STD_LOGIC := '0';
+        Status : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
+    );
+END Lift3Floor2;
+
+ARCHITECTURE BEHAVIOR OF Lift3Floor IS
+    TYPE type_fstate IS (Floor1,Floor2,Floor3);
+    SIGNAL fstate : type_fstate;
+    SIGNAL reg_fstate : type_fstate;
+BEGIN
+    PROCESS (clock,reg_fstate)
+    BEGIN
+        IF (clock='1' AND clock'event) THEN
+            fstate <= reg_fstate;
+        END IF;
+    END PROCESS;
+
+    PROCESS (fstate,reset,SW1,SW2,SW3)
+    BEGIN
+        IF (reset='1') THEN
+            reg_fstate <= Floor1;
+            Status <= "00";
+        ELSE
+            Status <= "00";
+            CASE fstate IS
+                WHEN Floor1 =>
+                    IF (((SW2 = '1') OR (SW3 = '1'))) THEN
+                        reg_fstate <= Floor2;
+                    ELSE
+                        reg_fstate <= Floor1;
+                    END IF;
+
+                    Status <= "01";
+                WHEN Floor2 =>
+                    IF (((SW1 = '1') AND NOT((SW3 = '1')))) THEN
+                        reg_fstate <= Floor1;
+                    ELSIF ((NOT((SW1 = '1')) AND (SW3 = '1'))) THEN
+                        reg_fstate <= Floor3;
+                    ELSE
+                        reg_fstate <= Floor2;
+                    END IF;
+
+                    Status <= "10";
+                WHEN Floor3 =>
+                    IF (((SW2 = '1') OR (SW1 = '1'))) THEN
+                        reg_fstate <= Floor2;
+                    ELSE
+                        reg_fstate <= Floor3;
+                    END IF;
+
+                    Status <= "11";
+                WHEN OTHERS => 
+                    Status <= "XX";
+                    report "Reach undefined state";
+            END CASE;
+        END IF;
+    END PROCESS;
+END BEHAVIOR;
