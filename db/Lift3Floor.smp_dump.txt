@@ -1,0 +1,7 @@
+
+State Machine - |Test_Lift|Lift3Floor:inst|fstate
+Name fstate.Error fstate.Floor3 fstate.Floor2 fstate.Floor1 
+fstate.Floor1 0 0 0 0 
+fstate.Floor2 0 0 1 1 
+fstate.Floor3 0 1 0 1 
+fstate.Error 1 0 0 1 

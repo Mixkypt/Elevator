@@ -1,0 +1,210 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+10
+767
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+SR_Latch
+# storage
+db|Lift3Floor.(1).cnf
+db|Lift3Floor.(1).cnf
+# case_insensitive
+# source_file
+SR_Latch.bdf
+6f11b58e9c787d23553ac4de44b1e45c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+SR_Latch:inst10
+SR_Latch:inst11
+SR_Latch:inst12
+}
+# macro_sequence
+
+# end
+# entity
+Clk_1Hz
+# storage
+db|Lift3Floor.(3).cnf
+db|Lift3Floor.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+Clk_1Hz.vhd
+d950f069e916ff4fdd7bb88a56f7d1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Clk_1Hz:inst7
+}
+# lmf
+c:|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+74247
+# storage
+db|Lift3Floor.(4).cnf
+db|Lift3Floor.(4).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp2|quartus|libraries|others|maxplus2|74247.bdf
+501f537eefc9c2c5deb3d432bbfb902d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74247:inst5
+}
+# macro_sequence
+
+# end
+# entity
+ElevatorController
+# storage
+db|Lift3Floor.(5).cnf
+db|Lift3Floor.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ElevatorController.vhd
+554d666a4c75d38177725660e86ea9
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+c:|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+Lift3Floor2
+# storage
+db|Lift3Floor.(2).cnf
+db|Lift3Floor.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+Lift3Floor2.vhd
+4171e37377888346e0a8a8ff36f05
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+c:|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+Lift3Floor
+# storage
+db|Lift3Floor.(0).cnf
+db|Lift3Floor.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+Lift3Floor.vhd
+da1c74301fccf616169fd3d5c9d996e
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Lift3Floor:inst
+}
+# lmf
+c:|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+Test_Lift
+# storage
+db|Lift3Floor.(6).cnf
+db|Lift3Floor.(6).cnf
+# case_insensitive
+# source_file
+Test_Lift.bdf
+e5b113257f967d11941d87997702b5c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
